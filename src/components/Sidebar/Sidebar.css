@@ -1,0 +1,22 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #181818;
+    color: #f0f0f0;
+    gap: 20px;
+}
+.sidebar input, button{
+    border-radius: 10px;
+    padding: 10px;
+    border: 0;
+}
+input[type=checkbox]{
+    height: 20px;
+    width: 20px;
+}
+.sidebar span{
+    color: red
+}

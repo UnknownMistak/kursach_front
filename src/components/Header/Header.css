@@ -1,0 +1,11 @@
+.header{
+    background-color: #181818;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    width: 100vw;
+}
+a{
+    text-decoration: none; 
+    color: #f0f0f0;
+}

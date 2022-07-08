@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { useAppDispatch } from './store/hooks';
+import { getUsers } from './store/actions/userActions';
+import Header from './components/Header/Header';
+import Sidebar from './components/Sidebar/Sidebar';
+import { getProjects } from './store/actions/projectActions';
+import ProjectPage from './components/pages/ProjectPage/ProjectPage';
+import UserPage from './components/pages/UserPage/UserPage';
 
 function App() {
+
+  const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    dispatch(getUsers())
+    dispatch(getProjects())
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div style={{display: 'flex', gap: 30, padding: 30}}>
+        <Sidebar />
+        <Routes>
+          <Route path="/users" element={<UserPage/>} />
+          <Route path="/projects" element={<ProjectPage />} />
+        </Routes>
+      </div>
     </div>
   );
 }

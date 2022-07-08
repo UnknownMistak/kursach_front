@@ -1,0 +1,23 @@
+.projectpage {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #f0f0f0;
+}
+
+.projectpage .item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 10px;
+    padding: 30px;
+    background-color: #181818;
+}
+.projectsort{
+    display: flex;
+    gap: 20px;
+}
+.projectbuttons{
+    display: flex;
+    gap: 10px;
+}
