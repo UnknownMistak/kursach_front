@@ -1,1 +1,1 @@
-export const API_KEY = "https://185b-176-195-135-125.eu.ngrok.io"
+export const API_KEY = "https://d563-176-195-135-125.eu.ngrok.io"
