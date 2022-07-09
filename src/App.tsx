@@ -23,7 +23,7 @@ function App() {
       <div style={{display: 'flex', gap: 30, padding: 30}}>
         <Sidebar />
         <Routes>
-          <Route path="/" element={<UserPage/>}/>
+          <Route path="/" element={<ProjectPage/>}/>
           <Route path="/users" element={<UserPage/>} />
           <Route path="/projects" element={<ProjectPage />} />
         </Routes>
