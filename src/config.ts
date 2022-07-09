@@ -1,1 +1,1 @@
-export const API_KEY = "https://cosycute.pythonanywhere.com/"
+export const API_KEY = "https://cosycute.pythonanywhere.com"
